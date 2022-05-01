@@ -846,3 +846,126 @@ body {
         font-size: 16px;
     }
 }
+
+.main__team {
+    margin-bottom: 250px;
+}
+
+.team__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.team__teammate {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.teammate__photo {
+    position: relative;
+}
+
+.teammate__circle {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: -1;
+}
+
+.teammate__desc {
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+    padding: 12px 23px;
+    border-radius: 8px;
+    background: rgb(40, 48, 54);
+    background: linear-gradient(151deg, rgba(40, 48, 54, 0.8) 75%, rgba(8, 189, 232, 0.19931722689075626) 100%);
+    cursor: cell;
+}
+
+.teammate__name {
+    font-size: 26px;
+    line-height: 150%;
+    color: rgba(255, 253, 253, 0.78);
+    margin-bottom: 5px;
+}
+
+.teammate__position {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.team__teammate-qoute {
+    padding: 100px 60px 0px 60px;
+}
+
+.team__teammate-qoute p {
+    max-width: 430px;
+    font-size: 14px;
+    line-height: 214%;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.team__body::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+    background: url(../img/team/arrow-left.svg) no-repeat;
+    cursor: pointer;
+}
+
+.team__body::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    background: url(../img/team/arrow-right.svg) no-repeat;
+    cursor: pointer;
+}
+
+.team__teammate-qoute {
+    position: relative;
+}
+
+.team__teammate-qoute::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background: url(../img/team/qoute.svg) no-repeat;
+}
+
+.team__slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__rectangle {
+    display: block;
+    width: 44px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #283036;
+}
+
+.slider__rectangle:not(:last-child) {
+    margin-right: 18px;
+}
+
+.slider-rectangle-active {
+    background-color: #FF6E30;
+}
