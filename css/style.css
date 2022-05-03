@@ -860,8 +860,6 @@ body {
 }
 
 .team__teammate {
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
@@ -871,7 +869,7 @@ body {
 
 .teammate__circle {
     position: absolute;
-    top: 90px;
+    top: 20%;
     left: 0;
     z-index: -1;
 }
@@ -949,12 +947,12 @@ body {
     background: url(../img/team/qoute.svg) no-repeat;
 }
 
-.team__slider {
+.team__rectangles {
     display: flex;
     justify-content: center;
 }
 
-.slider__rectangle {
+.team__rectangle {
     display: block;
     width: 44px;
     height: 6px;
@@ -962,10 +960,119 @@ body {
     background-color: #283036;
 }
 
-.slider__rectangle:not(:last-child) {
+.team__rectangle:not(:last-child) {
     margin-right: 18px;
 }
 
-.slider-rectangle-active {
+.team-rectangle-active {
     background-color: #FF6E30;
+}
+
+@media (max-width:1088px) {
+    .team__body::before {
+        left: -10px;
+    }
+}
+
+@media (max-width:970px) {
+    .team__body::before {
+        top: 35%;
+        left: 0px;
+    }
+
+    .team__body::after {
+        top: 35%;
+    }
+}
+
+@media (max-width: 688px) {
+    .main__team {
+        margin-bottom: 130px;
+    }
+
+    .main__newcomer-tools {
+        margin-bottom: 70px;
+    }
+
+    .team__body {
+        margin-bottom: 50px;
+    }
+
+    .team__body::before {
+        display: none;
+    }
+
+    .team__body::after {
+        display: none;
+    }
+
+    .team__teammate {
+        padding: 0px 70px 50px 70px;
+    }
+
+    .teammate__photo::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -85px;
+        width: 48px;
+        height: 48px;
+        background: url(../img/team/arrow-left.svg) no-repeat;
+        cursor: pointer;
+    }
+
+    .teammate__photo::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -85px;
+        width: 48px;
+        height: 48px;
+        background: url(../img/team/arrow-right.svg) no-repeat;
+        cursor: pointer;
+    }
+
+    .teammate__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .teammate__circle {
+        width: 100%;
+        height: auto;
+    }
+
+    .teammate__desc {
+        right: 75px;
+        bottom: 100px;
+    }
+
+    .teammate__name {
+        font-size: 20px;
+    }
+
+    .teammate__position {
+        font-size: 14px;
+    }
+
+    .team__teammate-qoute {
+        padding: 0px;
+    }
+
+    .team__teammate-qoute p {
+        text-align: justify;
+    }
+
+    .team__teammate-qoute::after {
+        top: -30px;
+    }
+}
+
+@media (max-width: 488px) {
+    .teammate__desc {
+        right: 35px;
+        bottom: 50px;
+    }
 }
