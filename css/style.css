@@ -266,6 +266,22 @@ body {
     }
 }
 
+@media (max-width: 590px) {
+    .main__intro {
+        margin-bottom: 100px;
+    }
+
+    .intro__container::after {
+        height: 85%;
+    }
+}
+
+@media (max-width: 478px) {
+    .intro__container::after {
+        height: 80%;
+    }
+}
+
 .intro__body {
     padding: 180px 0px 0px 0px;
 }
@@ -371,7 +387,7 @@ body {
 
 @media (max-width: 478px) {
     .intro__form {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .intro__title {
@@ -412,6 +428,14 @@ body {
 
 .social__item:not(:last-child) {
     margin-right: 20px;
+}
+
+.social__item img {
+    transition: all 0.3s ease 0s;
+}
+
+.social__item img:hover {
+    transform: scale(1.2);
 }
 
 .main__tools {
