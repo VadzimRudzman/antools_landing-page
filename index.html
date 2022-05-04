@@ -33,10 +33,10 @@
                 </div>
                 <nav class="header__menu menu" id="nav-bar">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link nav-link">Home</a></li>
-                        <li class="menu__item"><a href=" #" class="menu__link nav-link">Categories</a></li>
-                        <li class="menu__item"><a href=" #" class="menu__link nav-link">My collection</a></li>
-                        <li class="menu__item"><a href=" #" class="menu__link nav-link">Blog</a></li>
+                        <li class="menu__item"><a href="#home" class="menu__link nav-link">Home</a></li>
+                        <li class="menu__item"><a href="#tools" class="menu__link nav-link">Popular tools</a></li>
+                        <li class="menu__item"><a href="#team" class="menu__link nav-link">Team</a></li>
+                        <li class="menu__item"><a href="#video" class="menu__link nav-link">Video</a></li>
                     </ul>
                     <div class="menu__close">
                         <span class="menu__closeline"></span>
@@ -56,7 +56,7 @@
         <!-- Main start -->
 
         <main class="main">
-            <div class="main__intro intro">
+            <div class="main__intro intro" id="home">
                 <div class="intro__container container">
                     <div class="intro__body">
                         <h1 class="intro__title">Awesome tools for
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <section class="main__tools tools">
+            <section class="main__tools tools" id="tools">
                 <div class="tools__container container">
                     <div class="tools__header">
                         <h2 class="tools__title">Most Popular Tools</h2>
@@ -429,7 +429,7 @@
                 </div>
             </section>
 
-            <div class="main__team team">
+            <div class="main__team team" id="team">
                 <div class="team__container container">
                     <div class="team__body">
                         <div class="team__teammate teammate">
@@ -457,6 +457,17 @@
                         <span class="team__rectangle"></span>
                         <span class="team__rectangle team-rectangle-active"></span>
                         <span class="team__rectangle"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__video video">
+                <div class="video__container container">
+                    <div class="video__body">
+                        <iframe class="video__item" id="video" width="560" height="315"
+                            src="https://www.youtube.com/embed/9CEW3Tmx2tg" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
