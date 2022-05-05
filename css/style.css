@@ -497,7 +497,7 @@ body {
     grid-column: span 2;
 }
 
-.tools__card-item {
+.card-item {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -546,6 +546,7 @@ body {
     line-height: 125%;
     color: rgba(255, 255, 255, 0.55);
     margin-bottom: 30px;
+    flex: 1 1 auto;
 }
 
 .card-item__description-md {
