@@ -1,3 +1,5 @@
+/* Common styles start */
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -32,6 +34,11 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/* Common styles end */
+
+
+/* Header styles start */
 
 .header {
     position: fixed;
@@ -239,7 +246,13 @@ body {
     }
 }
 
-.main__intro {
+
+/* Header styles end */
+
+
+/* Intro styles start */
+
+.intro {
     margin-bottom: 180px;
 }
 
@@ -267,7 +280,7 @@ body {
 }
 
 @media (max-width: 590px) {
-    .main__intro {
+    .intro {
         margin-bottom: 100px;
     }
 
@@ -438,7 +451,12 @@ body {
     transform: scale(1.2);
 }
 
-.main__tools {
+/* Intro styles end */
+
+
+/* Tools styles start */
+
+.tools {
     margin-bottom: 200px;
 }
 
@@ -633,7 +651,7 @@ body {
 }
 
 @media (max-width:970px) {
-    .main__tools {
+    .tools {
         margin-bottom: 100px;
     }
 
@@ -651,7 +669,7 @@ body {
 }
 
 @media (max-width:688px) {
-    .main__tools {
+    .tools {
         margin-bottom: 80px;
     }
 
@@ -712,7 +730,12 @@ body {
     }
 }
 
-.main__partners {
+/* Tools styles end */
+
+
+/* Partners styles start */
+
+.partners {
     margin-bottom: 200px;
 }
 
@@ -743,18 +766,23 @@ body {
 }
 
 @media (max-width:970px) {
-    .main__partners {
+    .partners {
         margin-bottom: 100px;
     }
 }
 
 @media (max-width:688px) {
-    .main__partners {
+    .partners {
         margin-bottom: 80px;
     }
 }
 
-.main__newcomer-tools {
+/* Partners styles end */
+
+
+/* Newcomer-tools styles start */
+
+.newcomer-tools {
     margin-bottom: 200px;
 }
 
@@ -818,11 +846,11 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .main__partners {
+    .partners {
         margin-bottom: 130px;
     }
 
-    .main__newcomer-tools {
+    .newcomer-tools {
         margin-bottom: 130px;
     }
 
@@ -861,7 +889,7 @@ body {
 }
 
 @media (max-width: 590px) {
-    .main__newcomer-tools {
+    .newcomer-tools {
         margin-bottom: 70px;
     }
 
@@ -875,7 +903,12 @@ body {
     }
 }
 
-.main__team {
+/* Newcomer-tools styles end */
+
+
+/* Team styles start */
+
+.team {
     margin-bottom: 150px;
 }
 
@@ -1003,7 +1036,7 @@ body {
 }
 
 @media (max-width:970px) {
-    .main__team {
+    .team {
         margin-bottom: 100px;
     }
 
@@ -1018,7 +1051,7 @@ body {
 }
 
 @media (max-width: 688px) {
-    .main__team {
+    .team {
         margin-bottom: 70px;
     }
 
@@ -1105,7 +1138,12 @@ body {
     }
 }
 
-.main__video {
+/* Team styles end */
+
+
+/* Video styles start */
+
+.video {
     margin-bottom: 150px;
 }
 
@@ -1126,18 +1164,23 @@ body {
 }
 
 @media (max-width: 970px) {
-    .main__video {
+    .video {
         margin-bottom: 100px;
     }
 }
 
 @media (max-width: 688px) {
-    .main__video {
+    .video {
         margin-bottom: 70px;
     }
 }
 
-.main__join-us {
+/* Video styles end */
+
+
+/* Join-us styles start */
+
+.join-us {
     margin-bottom: 240px;
 }
 
@@ -1209,13 +1252,13 @@ body {
 }
 
 @media (max-width: 970px) {
-    .main__join-us {
+    .join-us {
         margin-bottom: 160px;
     }
 }
 
 @media (max-width: 688px) {
-    .main__join-us {
+    .join-us {
         margin-bottom: 100px;
     }
 
@@ -1259,6 +1302,11 @@ body {
         flex: 1 1 auto;
     }
 }
+
+/* Join-us styles end */
+
+
+/* Footer styles start */
 
 .footer {
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -1381,3 +1429,5 @@ body {
         font-size: 14px;
     }
 }
+
+/* Footer styles end */
